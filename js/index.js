@@ -1,15 +1,15 @@
 function updateClock() {
     const now = new Date();
 
-    let hours = now.getHours();
-    let minutes = now.getMinutes();
-    let seconds = now.getSeconds();
+    let soat = now.getHours();
+    let minut = now.getMinutes();
+    let sekund = now.getSeconds();
 
-    hours = hours < 10 ? "0" + hours : hours;
-    minutes = minutes < 10 ? "0" + minutes : minutes;
-    seconds = seconds < 10 ? "0" + seconds : seconds;
+    hours = (soat < 10)? "0" + soat : soat;
+    minutes = (minut < 10) ? "0" + minut : minut;
+    seconds = (sekund < 10) ? "0" + sekund : sekund;
 
-    const timeString = `${hours}:${minutes}:${seconds}`;
+    const timeString = `${soat}:${minut}:${sekund}`;
 
     const sasas=  document.getElementById("time").textContent = timeString;
 }
