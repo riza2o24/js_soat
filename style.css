@@ -1,0 +1,16 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #111;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+
+#time {
+    color: #00ffcc;
+    font-size: 60px;
+    letter-spacing: 5px;
+}
